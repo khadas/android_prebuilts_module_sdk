@@ -1,11 +1,6 @@
 // This is auto-generated. DO NOT EDIT.
 
-package {
-    // A default list here prevents the license LSC from adding its own list which would
-    // be unnecessary as every module in the sdk already has its own licenses property.
-    default_applicable_licenses: ["Android-Apache-2.0"],
-}
-
+// Soong config variable stanza added by vendor/google/build/mainline_modules_sdks.py.
 soong_config_module_type_import {
     from: "packages/modules/common/Android.bp",
     module_types: [
@@ -13,6 +8,12 @@ soong_config_module_type_import {
         "module_java_sdk_library_import",
         "module_prebuilt_bootclasspath_fragment",
     ],
+}
+
+package {
+    // A default list here prevents the license LSC from adding its own list which would
+    // be unnecessary as every module in the sdk already has its own licenses property.
+    default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
 prebuilt_bootclasspath_fragment {
@@ -37,6 +38,7 @@ prebuilt_bootclasspath_fragment {
 
 module_prebuilt_bootclasspath_fragment {
     name: "com.android.media-bootclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -80,6 +82,7 @@ java_import {
 
 module_java_import {
     name: "updatable-media",
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -133,6 +136,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "framework-media",
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -192,6 +196,7 @@ java_sdk_library_import {
 
 module_java_sdk_library_import {
     name: "service-media-s",
+    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {

@@ -7501,9 +7501,11 @@ Lcom/android/wifi/x/com/android/modules/utils/build/SdkLevel;-><init>()V
 Lcom/android/wifi/x/com/android/modules/utils/build/SdkLevel;->isAtLeastPreReleaseCodename(Ljava/lang/String;)Z
 Lcom/android/wifi/x/com/android/modules/utils/build/SdkLevel;->isAtLeastR()Z
 Lcom/android/wifi/x/com/android/modules/utils/build/SdkLevel;->isAtLeastS()Z
+Lcom/android/wifi/x/com/android/modules/utils/build/SdkLevel;->isAtLeastSv2()Z
 Lcom/android/wifi/x/com/android/modules/utils/build/SdkLevel;->isAtLeastT()Z
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;-><clinit>()V
-Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;-><init>(ILjava/lang/String;)V
+Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;-><init>(ILjava/lang/String;Ljava/util/Set;)V
+Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->PREVIOUS_CODENAMES:Landroid/util/SparseArray;
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->isAtLeast(Ljava/lang/String;)Z
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->isAtLeastInternal(Ljava/lang/String;)Z
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->isAtMost(Ljava/lang/String;)Z
@@ -7511,8 +7513,11 @@ Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->isAtMost
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->isCodename(Ljava/lang/String;)Z
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->mCodename:Ljava/lang/String;
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->mIsReleaseBuild:Z
+Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->mKnownCodenames:Ljava/util/Set;
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->mSdkInt:I
+Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->removeFingerprint(Ljava/lang/String;)Ljava/lang/String;
 Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->sInstance:Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;
+Lcom/android/wifi/x/com/android/modules/utils/build/UnboundedSdkLevel;->setOf([Ljava/lang/String;)Landroid/util/ArraySet;
 Lcom/android/wifi/x/com/android/net/module/util/DnsSdTxtRecord$1;-><init>()V
 Lcom/android/wifi/x/com/android/net/module/util/DnsSdTxtRecord$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/wifi/x/com/android/net/module/util/DnsSdTxtRecord;
 Lcom/android/wifi/x/com/android/net/module/util/DnsSdTxtRecord$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
